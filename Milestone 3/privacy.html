@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .privacy-container {
+        max-width: 1000px;
+        margin: 35px auto;
+        padding: 0 20px;
+    }
+
+    .privacy-header {
+        background: linear-gradient(120deg, #168de2, #7838a7);
+        color: white;
+        text-align: center;
+        padding: 35px 20px;
+        border-radius: 16px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+    }
+
+    .privacy-header h1 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .privacy-header p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .privacy-section {
+        padding: 18px 15px;
+        margin-bottom: 14px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .privacy-section h2 {
+        font-size: 21px;
+        color: #3e559b;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .privacy-section p,
+    .privacy-section li {
+        color: #444;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .privacy-section ul {
+        padding-left: 25px;
+    }
+
+    @media (max-width: 600px) {
+        .privacy-header h1 {
+            font-size: 25px;
+        }
+
+        .privacy-section h2 {
+            font-size: 19px;
+        }
+    }
+</style>
+
+<div class="privacy-container">
+
+    <div class="privacy-header">
+        <h1>🛡️ Privacy Policy</h1>
+        <p>Your privacy matters to us at EventOps AI.</p>
+    </div>
+
+    <section class="privacy-section">
+        <h2>1. Introduction</h2>
+        <p>
+            Welcome to EventOps AI, an AI-assisted event management platform.
+            This Privacy Policy explains how information may be collected,
+            used, and protected when you use our platform.
+        </p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>2. Information We Collect</h2>
+        <p>Depending on how you use the platform, information may include:</p>
+        <ul>
+            <li>Name and email address provided during registration.</li>
+            <li>Event registration and participation details.</li>
+            <li>Messages, feedback, and support requests you submit.</li>
+            <li>Information needed to maintain account security and platform operation.</li>
+        </ul>
+    </section>
+
+    <section class="privacy-section">
+        <h2>3. How We Use Information</h2>
+        <p>Information may be used to:</p>
+        <ul>
+            <li>Manage user accounts and event registrations.</li>
+            <li>Provide event management features.</li>
+            <li>Respond to feedback and support requests.</li>
+            <li>Improve platform functionality and security.</li>
+        </ul>
+    </section>
+
+    <section class="privacy-section">
+        <h2>4. Data Protection</h2>
+        <p>
+            We aim to protect information using appropriate security measures.
+            Access to information should be limited to authorized purposes.
+        </p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>5. Information Sharing</h2>
+        <p>
+            Information should only be shared when necessary to operate the
+            platform, with appropriate authorization, or when required by law.
+        </p>
+    </section>
+
+    <section class="privacy-section">
+        <h2>6. Contact Us</h2>
+        <p>
+            For privacy-related questions, please contact the EventOps AI
+            project administrator.
+        </p>
+    </section>
+
+</div>
+{% endblock %}
