@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | EventOps AI</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6fb;
+            color: #26344a;
+        }
+
+        .top-header {
+            text-align: center;
+            padding: 25px 15px;
+            color: white;
+            background: linear-gradient(110deg, #5148d9, #087fce);
+        }
+
+        .top-header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        .top-header p {
+            font-size: 14px;
+            color: #e8edff;
+        }
+
+        nav {
+            background: #087fce;
+            padding: 12px 7%;
+            text-align: right;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .contact-card {
+            display: grid;
+            grid-template-columns: 1fr 1.35fr;
+            background: white;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 35px rgba(30, 55, 100, 0.10);
+        }
+
+        .info-panel {
+            padding: 35px 30px;
+            color: white;
+            background: linear-gradient(145deg, #5148d9, #087fce);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-panel h2 {
+            font-size: 23px;
+            line-height: 1.35;
+            margin-bottom: 14px;
+        }
+
+        .info-panel > p {
+            color: #e4eaff;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .feature {
+            display: flex;
+            gap: 13px;
+            align-items: flex-start;
+            margin-bottom: 23px;
+        }
+
+        .feature-icon {
+            min-width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+        }
+
+        .feature h3 {
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .feature p {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #e2e9ff;
+        }
+
+        .tagline {
+            margin-top: auto;
+            padding-top: 20px;
+            font-size: 12px;
+            font-style: italic;
+            color: #e3eaff;
+        }
+
+        .form-panel {
+            padding: 35px 30px;
+        }
+
+        .form-heading {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .form-heading .icon {
+            font-size: 25px;
+        }
+
+        .form-heading h2 {
+            font-size: 21px;
+            margin-bottom: 6px;
+        }
+
+        .form-heading p {
+            font-size: 12px;
+            color: #7b8799;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #dce2ec;
+            border-radius: 8px;
+            font-size: 13px;
+            font-family: inherit;
+            background: #fbfcff;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #6558e8;
+            box-shadow: 0 0 0 3px rgba(101, 88, 232, 0.10);
+        }
+
+        textarea {
+            min-height: 125px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            background: linear-gradient(100deg, #5148d9, #087fce);
+            transition: 0.2s;
+        }
+
+        .submit-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #7b8799;
+            font-size: 12px;
+        }
+
+        @media (max-width: 700px) {
+            .contact-card {
+                grid-template-columns: 1fr;
+            }
+
+            .info-panel, .form-panel {
+                padding: 28px 22px;
+            }
+
+            .top-header h1 {
+                font-size: 24px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="top-header">
+        <h1>Get in Touch with EventOps AI</h1>
+        <p>Have questions or want to collaborate? Reach out to our team!</p>
+    </header>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+
+    <main class="contact-container">
+        <div class="contact-card">
+
+            <section class="info-panel">
+                <h2>Why Connect with EventOps AI?</h2>
+
+                <p>
+                    Get access to smart event management tools,
+                    AI agents, and seamless operational support.
+                </p>
+
+                <div class="feature">
+                    <div class="feature-icon">📅</div>
+                    <div>
+                        <h3>Manage Events</h3>
+                        <p>Create, organize, and track events effortlessly.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <div>
+                        <h3>AI Powered Support</h3>
+                        <p>Let intelligent agents handle repetitive event tasks.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="feature-icon">👥</div>
+                    <div>
+                        <h3>Connect &amp; Collaborate</h3>
+                        <p>Bring team members and participants together.</p>
+                    </div>
+                </div>
+
+                <div class="tagline">
+                    Be a part of the future of smart events! ✨
+                </div>
+            </section>
+
+            <section class="form-panel">
+                <div class="form-heading">
+                    <span class="icon">📩</span>
+                    <div>
+                        <h2>Contact Us</h2>
+                        <p>Fill in your details and we'll get back to you.</p>
+                    </div>
+                </div>
+
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject"
+                               placeholder="What is this regarding?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message"
+                                  placeholder="Write your message here..."
+                                  required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        ➤ &nbsp; Send Message
+                    </button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        © 2026 EventOps AI | Autonomous Event Management Intelligence
+    </footer>
+
+</body>
+</html>
